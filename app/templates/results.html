@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PyCar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../static/flatUI/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../static/flatUI/flat-ui.css" rel="stylesheet">
+<!-- replace favicon.ico with a new image.-->
+    <link rel="shortcut icon" href="../static/flatUI/images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1> Values </h1>
+        <h2>Volvo</h2>
+        {% for v in volvo %}
+            <p>{{v}}</p>
+        {% endfor %}
+        <h2>Honda</h2>
+        {% for h in honda %}
+            <p>{{h}}</p>
+        {% endfor %}
+        <h2>Jeep</h2>
+        {% for j in jeep %}
+            <p>{{j}}</p>
+        {% endfor %} 
+
+    </div>
+</body>
+</html>

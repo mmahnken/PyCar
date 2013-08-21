@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PyCar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../static/flatUI/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../static/flatUI/flat-ui.css" rel="stylesheet">
+<!-- replace favicon.ico with a new image.-->
+    <link rel="shortcut icon" href="../static/flatUI/images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <form action='/getting' method = 'post'>
+            {{form.hidden_tag()}}
+            <h1>Mileage for Volvo</h1>
+            {{form.mileage_for_volvo}}
+            <h1>Mileage for Jeep</h1>
+            {{form.mileage_for_jeep}}
+            <h1>Mileage for Honda</h1>
+            {{form.mileage_for_honda}}
+            <input class="btn btn-large btn-block btn-info" type="submit" value="SUBMIT"></p> 
+          </div>
+      </form>
+
+    </div>
+</body>
+</html>
